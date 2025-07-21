@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Glamour by Elena – Cosmetologist</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+  <style>
+    
+    .hero-section {
+      background-image: url('./sps.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 100vh;
+      position: relative;
+      z-index: 0;
+
+      h1, p{
+        color: white;
+      }
+    }
+    
+    .hero-section::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity here */
+      z-index: 1;
+    }
+    
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+    
+    .portfolio{
+        magin-top: 50px;
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-800 font-sans">
+
+  <!-- Hero -->
+  <section class=" hero-section bg-cover bg-center bg-no-repeat py-20 px-6 text-center h-screen flex flex-col items-center justify-center">
+
+    <h1 class="text-4xl md:text-6xl font-bold mb-4">Glamour by Sarah</h1>
+    <p class="text-lg md:text-xl mb-6">Professional Cosmetologist | Beauty Redefined</p>
+    <a href="#contact" class="bg-pink-500 hover:bg-pink-600 text-white py-3 px-6 rounded-full">Book an Appointment</a>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-16 px-6 max-w-4xl mx-auto flex flex-col h-screen items-center justify-center">
+    <h2 class="text-3xl font-bold mb-6 text-center">About Me</h2>
+    <p class="text-lg leading-relaxed text-center">I’m Elena, a licensed cosmetologist with over 7 years of experience helping clients look and feel their best. I specialize in skincare, makeup, and hair styling. My passion is bringing out the natural beauty in every client using modern techniques and premium products.</p>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="bg-gray-100 py-16 px-6 flex flex-col h-full items-center justify-center">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-3xl font-bold mb-10 text-center">Services</h2>
+      <div class="grid md:grid-cols-3 gap-8 text-center">
+        <div class="bg-white p-6 rounded shadow">
+          <h3 class="text-xl font-semibold mb-2">Skincare Treatments</h3>
+          <p>Facials, acne care, exfoliation & glow therapy tailored to your skin type.</p>
+        </div>
+        <div class="bg-white p-6 rounded shadow">
+          <h3 class="text-xl font-semibold mb-2">Skincare Treatments</h3>
+          <p>Facials, acne care, exfoliation & glow therapy tailored to your skin type.</p>
+        </div>
+        <div class="bg-white p-6 rounded shadow">
+          <h3 class="text-xl font-semibold mb-2">Skincare Treatments</h3>
+          <p>Facials, acne care, exfoliation & glow therapy tailored to your s 
+          .,kin type.</p>
+        </div>
+        <div class="bg-white p-6 rounded shadow">
+          <h3 class="text-xl font-semibold mb-2">Skincare Treatments</h3>
+          <p>Facials, acne care, exfoliation & glow therapy tailored to your skin type.</p>
+        </div>
+        <div class="bg-white p-6 rounded shadow">
+          <h3 class="text-xl font-semibold mb-2">Makeup Artistry</h3>
+          <p>Bridal, photoshoot & event makeup to elevate your natural beauty.</p>
+        </div>
+        <div class="bg-white p-6 rounded shadow">
+          <h3 class="text-xl font-semibold mb-2">Hair Styling</h3>
+          <p>Updos, curls, braids, treatments & healthy hair maintenance tips.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section id="portfolio" class="portfolio py-16 px-6 max-w-4xl mx-auto">
+    <h2 class="text-3xl font-bold mb-10 text-center">Portfolio</h2>
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+      <img src="./makeuplook.jpg" class="rounded w-full h-full" alt="Makeup look"/>
+      <img src="./hairstyling.jpg" class="rounded w-full h-full" alt="Hair styling"/>
+      <img src="./facial treatment.jpg" class="rounded w-full h-full" alt="Facial treatment"/>
+      <img src="./costomology_files/0d046136b4889a9c900129fd15722df4.jpg" class="rounded w-full h-full" alt="Cosmetology"/>
+      <img src="./costomology_files/049e9b2f2f5771e0c3893f0f846d41c5.jpg" class="rounded w-full h-full" alt="Beauty"/>
+      <img src="./sps.jpg" class="rounded w-full h-full" alt="Spa"/>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="bg-pink-50 py-16 px-6">
+    <h2 class="text-3xl font-bold mb-10 text-center">What Clients Say</h2>
+    <div class="max-w-4xl mx-auto space-y-6">
+      <div class="bg-white p-6 rounded shadow">
+        <p class="italic">“Elena is a miracle worker! My wedding makeup lasted all day and looked stunning.”</p>
+        <p class="mt-2 text-right font-semibold">– Lisa O.</p>
+      </div>
+      <div class="bg-white p-6 rounded shadow">
+        <p class="italic">“Highly professional and talented. My skin has never looked better after her treatments.”</p>
+        <p class="mt-2 text-right font-semibold">– Amanda R.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-16 px-6 max-w-xl mx-auto">
+    <h2 class="text-3xl font-bold mb-6 text-center">Get in Touch</h2>
+    <form action="https://formspree.io/f/xblklerg" method="POST" class="space-y-4 bg-gray-50 p-6 rounded shadow">
+      <input type="text" name="name" placeholder="Your Name" class="w-full px-4 py-2 border rounded" required />
+      <input type="email" name="email" placeholder="Your Email" class="w-full px-4 py-2 border rounded" required />
+      <textarea name="message" placeholder="Your Message" class="w-full px-4 py-2 border rounded" rows="4" required></textarea>
+      <button type="submit" class="w-full bg-pink-500 hover:bg-pink-600 text-white py-2 rounded">Send Message</button>
+    </form>
+    
+    
+  
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white text-center py-6 mt-16">
+    <p>&copy; 2025 Glamour by Elena. All rights reserved.</p>
+   <!--  <p>Instagram | iMessage | WhatsApp</p> -->
+  </footer>
+
+  <!-- <script>
+    const form = document.querySelector('#contactForm');
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+  
+      const formData = {
+        name: form.name.value,
+        email: form.email.value,
+        message: form.message.value,
+      };
+  
+      try {
+        const res = await fetch('http://localhost:5000/send-email', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(formData),
+        });
+  
+        const data = await res.json();
+        if (data.success) {
+          alert('Message sent successfully!');
+          form.reset();
+        } else {
+          alert('Something went wrong. Try again.');
+        }
+      } catch (error) {
+        console.error(error);
+        alert('Failed to send message.');
+      }
+    });
+  </script> -->
+  
+
+</body>
+</html>
